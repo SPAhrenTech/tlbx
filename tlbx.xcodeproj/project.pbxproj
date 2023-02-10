@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9BC8CBDC2996C2D5009FD4A5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBDB2996C2D5009FD4A5 /* main.cpp */; };
+		9BC8CBF12996C2FC009FD4A5 /* col.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE52996C2FB009FD4A5 /* col.cpp */; };
+		9BC8CBF22996C2FC009FD4A5 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE62996C2FB009FD4A5 /* mth.cpp */; };
+		9BC8CBF32996C2FC009FD4A5 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE72996C2FB009FD4A5 /* trg.cpp */; };
+		9BC8CBF42996C2FC009FD4A5 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE82996C2FB009FD4A5 /* str.cpp */; };
+		9BC8CBF72996C414009FD4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,19 @@
 /* Begin PBXFileReference section */
 		9BC8CBD82996C2D5009FD4A5 /* tlbx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tlbx; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC8CBDB2996C2D5009FD4A5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9BC8CBE22996C2FB009FD4A5 /* ObjC_Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjC_Interop.mm; sourceTree = "<group>"; };
+		9BC8CBE32996C2FB009FD4A5 /* ObjC_Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjC_Interop.h; sourceTree = "<group>"; };
+		9BC8CBE52996C2FB009FD4A5 /* col.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = col.cpp; sourceTree = "<group>"; };
+		9BC8CBE62996C2FB009FD4A5 /* mth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mth.cpp; sourceTree = "<group>"; };
+		9BC8CBE72996C2FB009FD4A5 /* trg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trg.cpp; sourceTree = "<group>"; };
+		9BC8CBE82996C2FB009FD4A5 /* str.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = str.cpp; sourceTree = "<group>"; };
+		9BC8CBE92996C2FB009FD4A5 /* tlbx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tlbx.hpp; sourceTree = "<group>"; };
+		9BC8CBEA2996C2FB009FD4A5 /* cppBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cppBridge.h; sourceTree = "<group>"; };
+		9BC8CBEC2996C2FC009FD4A5 /* trg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trg.hpp; sourceTree = "<group>"; };
+		9BC8CBED2996C2FC009FD4A5 /* str.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = str.hpp; sourceTree = "<group>"; };
+		9BC8CBEE2996C2FC009FD4A5 /* col.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = col.hpp; sourceTree = "<group>"; };
+		9BC8CBEF2996C2FC009FD4A5 /* mth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mth.hpp; sourceTree = "<group>"; };
+		9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC8CBF72996C414009FD4A5 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +62,7 @@
 			children = (
 				9BC8CBDA2996C2D5009FD4A5 /* tlbx */,
 				9BC8CBD92996C2D5009FD4A5 /* Products */,
+				9BC8CBF52996C414009FD4A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +77,45 @@
 		9BC8CBDA2996C2D5009FD4A5 /* tlbx */ = {
 			isa = PBXGroup;
 			children = (
+				9BC8CBE32996C2FB009FD4A5 /* ObjC_Interop.h */,
+				9BC8CBE22996C2FB009FD4A5 /* ObjC_Interop.mm */,
+				9BC8CBEA2996C2FB009FD4A5 /* cppBridge.h */,
+				9BC8CBE92996C2FB009FD4A5 /* tlbx.hpp */,
+				9BC8CBEB2996C2FC009FD4A5 /* headers */,
+				9BC8CBE42996C2FB009FD4A5 /* sources */,
 				9BC8CBDB2996C2D5009FD4A5 /* main.cpp */,
 			);
 			path = tlbx;
+			sourceTree = "<group>";
+		};
+		9BC8CBE42996C2FB009FD4A5 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				9BC8CBE52996C2FB009FD4A5 /* col.cpp */,
+				9BC8CBE62996C2FB009FD4A5 /* mth.cpp */,
+				9BC8CBE72996C2FB009FD4A5 /* trg.cpp */,
+				9BC8CBE82996C2FB009FD4A5 /* str.cpp */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		9BC8CBEB2996C2FC009FD4A5 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				9BC8CBEC2996C2FC009FD4A5 /* trg.hpp */,
+				9BC8CBED2996C2FC009FD4A5 /* str.hpp */,
+				9BC8CBEE2996C2FC009FD4A5 /* col.hpp */,
+				9BC8CBEF2996C2FC009FD4A5 /* mth.hpp */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		9BC8CBF52996C414009FD4A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC8CBF32996C2FC009FD4A5 /* trg.cpp in Sources */,
+				9BC8CBF12996C2FC009FD4A5 /* col.cpp in Sources */,
+				9BC8CBF22996C2FC009FD4A5 /* mth.cpp in Sources */,
+				9BC8CBF42996C2FC009FD4A5 /* str.cpp in Sources */,
 				9BC8CBDC2996C2D5009FD4A5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5B4FJ76P7;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5B4FJ76P7;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
