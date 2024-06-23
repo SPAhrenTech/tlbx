@@ -37,7 +37,7 @@ str::str(const double Num,const int nDig):std::string()
 	
 	int nMag=0;
 
-	double  pDig=pwr(10.,nDig);
+	double  pDig=mth::pwr(10.,nDig);
 	double nRem=fabs(Num);
 	if(nRem>0.)nMag=(int)log10(nRem);
 	if(nMag<0)nMag=0;
@@ -45,9 +45,9 @@ str::str(const double Num,const int nDig):std::string()
 
 	for(int i=nMag;i>=-nDig;i--){
 
-		double p=pwr(10.,(double)i);
+		double p=mth::pwr(10.,(double)i);
 
-		double tVal=roundoff(nRem*pDig)/pDig;
+		double tVal=mth::roundoff(nRem*pDig)/pDig;
 		int nVal=(int)(tVal/p+1./pDig/10.);
 
 		char c=(char)(nVal+(int)'0');/*ascii*/
@@ -57,8 +57,8 @@ str::str(const double Num,const int nDig):std::string()
 		if((i==0)&&(nDig>0))
 			(*this)+=".";/*decimal point*/
 
-		double dVal=roundoff(nRem*pDig);
-		double dpVal=roundoff(nVal*p*pDig);
+		double dVal=mth::roundoff(nRem*pDig);
+		double dpVal=mth::roundoff(nVal*p*pDig);
 		nRem=(dVal-dpVal)/pDig;
 		}
 	}
