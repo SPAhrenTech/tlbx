@@ -3,9 +3,6 @@
 #ifndef _COL_
 #define _COL_
 
-#import "CoreGraphics/CoreGraphics.h"
-#include <simd/simd.h>
-
 class colRGB
 {
 protected:
@@ -19,11 +16,9 @@ public:
 	float& green(){return _green;}
 	float& blue(){return _blue;}
 
-	const float red() const{return _red;}
-	const float green() const{return _green;}
-	const float blue() const{return _blue;}
-
-	operator simd::float3();
+	float red() const{return _red;}
+	float green() const{return _green;}
+	float blue() const{return _blue;}
 
 	colRGB operator+(const colRGB& c) const;
 	colRGB operator-(const colRGB& c) const;
@@ -38,7 +33,7 @@ public:
 	static const colRGB Yellow;
 	static const colRGB Magenta;
 	static const colRGB Cyan;
-
+	
 };
 
 //
@@ -55,23 +50,11 @@ public:
 	col operator+(const col& c) const;
 	col operator-(const col& c) const;
 	
-	CGColorRef cgColor() const;
-
 	float& alpha(){return _alpha;}
-	const float alpha() const{return _alpha;}
+	float alpha() const{return _alpha;}
 
 	col operator/(const float x) const;
 	friend col operator*(const float x,const col& c);
-
-	void setFill(CGContextRef &context) const;
-	void setStroke(CGContextRef &context) const;
-
-	void setFill(CGContextRef &context,const float alpha) const;
-	void setStroke(CGContextRef &context,const float alpha) const;
-
-	operator simd::float4();
-
-	//fl_err read(tfl &f);
 };
 
 #endif

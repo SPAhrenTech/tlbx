@@ -1,22 +1,12 @@
 //strings - P. Ahrenkiel
 
 #include <cstdlib>
-#include <CoreServices/CoreServices.h>
-#import "CoreGraphics/CoreGraphics.h"
-//#import <Foundation/Foundation.h>
-//#include <ApplicationServices/ApplicationServices.h>
-//#include <iostream>
 #include <string>
 #include <math.h>
 
 #include "mth.hpp"
 #include "str.hpp"
-//#include "ObjC_Interop.h"
-#if defined(TARGET_IOS) || defined(TARGET_MACOS)
-#include "cppBridge.h"
-#endif
 
-using namespace std;
 const str null_str;
 
 //
@@ -31,7 +21,7 @@ str::str(const char &c):std::string()
 //
 str::str(const double Num,const int nDig):std::string()
 {
-	(string)(*this)="";
+	(std::string)(*this)="";
 	if(Num<0)
 		*this=str("-");
 	
@@ -105,13 +95,13 @@ str::str(int Num,int nDig):std::string()
 {
 	(*this)=str(Num);
 	while(len()<nDig)
-		(string)(*this)="0"+(string)(*this);
+		(std::string)(*this)="0"+(std::string)(*this);
 }
 	
 //
 str str::operator+(const str &s)
 {
-	return (string)(*this)+(string)s;
+	return (std::string)(*this)+(std::string)s;
 }
 
 //
@@ -228,8 +218,8 @@ bool str::containsRight(const str s,short *pos)
 str str::allcaps()
 {
 	str scap=*this;
-	size_t L=size();
-	for(short i=0;i<L;i++)
+	std::size_t L=size();
+	for(std::size_t i=0; i<L; i++)
 	{
 		char c=(*this)[i+1];
 		if(('a'<=c)&&(c<='z'))
@@ -245,7 +235,7 @@ void str::find(str &s,const char delim,const short occurence)
 	size_t L=size();
 	
 	short jocc=0;
-	for(short i=0;i<L;++i)
+	for(std::size_t i=0;i<L;++i)
 	{
 		str sc=mid(i,1);
 		if(sc==str(delim))
@@ -290,41 +280,16 @@ float str::sfloat()
 }
 
 //
-istream& operator>>(istream &is,str &s)
+std::istream& operator>>(std::istream &is,str &s)
 {
-	is>>(string &)(s);
+	is>>(std::string &)(s);
 	return is;
 }
 
 //
-ostream& operator<<(ostream &os,const str &s)
+std::ostream& operator<<(std::ostream &os,const str &s)
 {
-	os<<(string)s;
+	os<<static_cast<std::string>(s);
 	return os;
 }
 
-#if defined(TARGET_IOS) || defined(TARGET_TVOS) || defined(TARGET_MACOS)
-CFStringRef str::cfStringRef(CFAllocatorRef allocator,CFStringEncoding encoding) const
-{
-	return CFStringCreateWithCString(allocator,c_str(),encoding);
-}
-
-//
-str::str(UniChar *s,const UInt16 slen):std::string()
-{
-	for(short i=0;i<slen;++i)
-		*this+=s[i];
-}
-
-//
-void str::draw(CGPoint P) const
-{
-	drawString(cfStringRef(),P);
-}
-
-//
-void str::draw(CGRect R) const
-{
-	drawString(cfStringRef(),R);
-}
-#endif
