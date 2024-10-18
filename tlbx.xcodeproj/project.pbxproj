@@ -8,11 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		9BC8CBDC2996C2D5009FD4A5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBDB2996C2D5009FD4A5 /* main.cpp */; };
-		9BC8CBF12996C2FC009FD4A5 /* col.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE52996C2FB009FD4A5 /* col.cpp */; };
 		9BC8CBF22996C2FC009FD4A5 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE62996C2FB009FD4A5 /* mth.cpp */; };
 		9BC8CBF32996C2FC009FD4A5 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE72996C2FB009FD4A5 /* trg.cpp */; };
 		9BC8CBF42996C2FC009FD4A5 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE82996C2FB009FD4A5 /* str.cpp */; };
-		9BC8CBF72996C414009FD4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */; };
+		9BC8CC002996C73D009FD4A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBFF2996C73D009FD4A5 /* AppDelegate.m */; };
+		9BC8CC032996C73D009FD4A5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CC022996C73D009FD4A5 /* SceneDelegate.m */; };
+		9BC8CC062996C73D009FD4A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CC052996C73D009FD4A5 /* ViewController.m */; };
+		9BC8CC092996C73D009FD4A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC8CC072996C73D009FD4A5 /* Main.storyboard */; };
+		9BC8CC0C2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CC0A2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodeld */; };
+		9BC8CC0E2996C73F009FD4A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC8CC0D2996C73F009FD4A5 /* Assets.xcassets */; };
+		9BC8CC112996C73F009FD4A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC8CC0F2996C73F009FD4A5 /* LaunchScreen.storyboard */; };
+		9BC8CC142996C73F009FD4A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CC132996C73F009FD4A5 /* main.m */; };
+		9BC8CC202996C7AB009FD4A5 /* tlbx_iOS_lib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CC1F2996C7AB009FD4A5 /* tlbx_iOS_lib.mm */; };
+		9BC8CC212996C7AB009FD4A5 /* tlbx_iOS_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BC8CC1E2996C7AB009FD4A5 /* tlbx_iOS_lib.h */; };
+		9BC8CC252996C8B3009FD4A5 /* ObjC_Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE22996C2FB009FD4A5 /* ObjC_Interop.mm */; };
+		9BC8CC262996C8B3009FD4A5 /* col.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE52996C2FB009FD4A5 /* col.cpp */; };
+		9BC8CC272996C8B3009FD4A5 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE62996C2FB009FD4A5 /* mth.cpp */; };
+		9BC8CC282996C8B3009FD4A5 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE72996C2FB009FD4A5 /* trg.cpp */; };
+		9BC8CC292996C8B3009FD4A5 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE82996C2FB009FD4A5 /* str.cpp */; };
+		9BC8CC2B2996CD22009FD4A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */; };
+		9BC8CC2C2996CD2D009FD4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */; };
+		9BC8CC372996F067009FD4A5 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE62996C2FB009FD4A5 /* mth.cpp */; };
+		9BC8CC382996F067009FD4A5 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE72996C2FB009FD4A5 /* trg.cpp */; };
+		9BC8CC392996F067009FD4A5 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8CBE82996C2FB009FD4A5 /* str.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +42,16 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9BC8CC1A2996C7AB009FD4A5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				9BC8CC212996C7AB009FD4A5 /* tlbx_iOS_lib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -43,6 +71,24 @@
 		9BC8CBEE2996C2FC009FD4A5 /* col.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = col.hpp; sourceTree = "<group>"; };
 		9BC8CBEF2996C2FC009FD4A5 /* mth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mth.hpp; sourceTree = "<group>"; };
 		9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9BC8CBFC2996C73D009FD4A5 /* tlbx_iOS_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tlbx_iOS_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC8CBFE2996C73D009FD4A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BC8CBFF2996C73D009FD4A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BC8CC012996C73D009FD4A5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9BC8CC022996C73D009FD4A5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9BC8CC042996C73D009FD4A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9BC8CC052996C73D009FD4A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BC8CC082996C73D009FD4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BC8CC0B2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tlbx_iOS_app.xcdatamodel; sourceTree = "<group>"; };
+		9BC8CC0D2996C73F009FD4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BC8CC102996C73F009FD4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BC8CC122996C73F009FD4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC8CC132996C73F009FD4A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BC8CC1C2996C7AB009FD4A5 /* libtlbx_iOS_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtlbx_iOS_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC8CC1E2996C7AB009FD4A5 /* tlbx_iOS_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tlbx_iOS_lib.h; sourceTree = "<group>"; };
+		9BC8CC1F2996C7AB009FD4A5 /* tlbx_iOS_lib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = tlbx_iOS_lib.mm; sourceTree = "<group>"; };
+		9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9BC8CC332996F04B009FD4A5 /* libtlbx_MacOS_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtlbx_MacOS_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +96,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC8CBF72996C414009FD4A5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC8CBF92996C73D009FD4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC8CC192996C7AB009FD4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC8CC2C2996CD2D009FD4A5 /* CoreGraphics.framework in Frameworks */,
+				9BC8CC2B2996CD22009FD4A5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC8CC312996F04B009FD4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				9BC8CBDA2996C2D5009FD4A5 /* tlbx */,
+				9BC8CBFD2996C73D009FD4A5 /* tlbx_iOS_app */,
+				9BC8CC1D2996C7AB009FD4A5 /* tlbx_iOS_lib */,
 				9BC8CBD92996C2D5009FD4A5 /* Products */,
 				9BC8CBF52996C414009FD4A5 /* Frameworks */,
 			);
@@ -70,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				9BC8CBD82996C2D5009FD4A5 /* tlbx */,
+				9BC8CBFC2996C73D009FD4A5 /* tlbx_iOS_app.app */,
+				9BC8CC1C2996C7AB009FD4A5 /* libtlbx_iOS_lib.a */,
+				9BC8CC332996F04B009FD4A5 /* libtlbx_MacOS_lib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,12 +186,51 @@
 		9BC8CBF52996C414009FD4A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */,
 				9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9BC8CBFD2996C73D009FD4A5 /* tlbx_iOS_app */ = {
+			isa = PBXGroup;
+			children = (
+				9BC8CBFE2996C73D009FD4A5 /* AppDelegate.h */,
+				9BC8CBFF2996C73D009FD4A5 /* AppDelegate.m */,
+				9BC8CC012996C73D009FD4A5 /* SceneDelegate.h */,
+				9BC8CC022996C73D009FD4A5 /* SceneDelegate.m */,
+				9BC8CC042996C73D009FD4A5 /* ViewController.h */,
+				9BC8CC052996C73D009FD4A5 /* ViewController.m */,
+				9BC8CC072996C73D009FD4A5 /* Main.storyboard */,
+				9BC8CC0D2996C73F009FD4A5 /* Assets.xcassets */,
+				9BC8CC0F2996C73F009FD4A5 /* LaunchScreen.storyboard */,
+				9BC8CC122996C73F009FD4A5 /* Info.plist */,
+				9BC8CC132996C73F009FD4A5 /* main.m */,
+				9BC8CC0A2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodeld */,
+			);
+			path = tlbx_iOS_app;
+			sourceTree = "<group>";
+		};
+		9BC8CC1D2996C7AB009FD4A5 /* tlbx_iOS_lib */ = {
+			isa = PBXGroup;
+			children = (
+				9BC8CC1E2996C7AB009FD4A5 /* tlbx_iOS_lib.h */,
+				9BC8CC1F2996C7AB009FD4A5 /* tlbx_iOS_lib.mm */,
+			);
+			path = tlbx_iOS_lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9BC8CC2F2996F04B009FD4A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9BC8CBD72996C2D5009FD4A5 /* tlbx */ = {
@@ -138,6 +250,57 @@
 			productReference = 9BC8CBD82996C2D5009FD4A5 /* tlbx */;
 			productType = "com.apple.product-type.tool";
 		};
+		9BC8CBFB2996C73D009FD4A5 /* tlbx_iOS_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC8CC152996C73F009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_iOS_app" */;
+			buildPhases = (
+				9BC8CBF82996C73D009FD4A5 /* Sources */,
+				9BC8CBF92996C73D009FD4A5 /* Frameworks */,
+				9BC8CBFA2996C73D009FD4A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tlbx_iOS_app;
+			productName = tlbx_iOS_app;
+			productReference = 9BC8CBFC2996C73D009FD4A5 /* tlbx_iOS_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BC8CC1B2996C7AB009FD4A5 /* tlbx_iOS_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC8CC222996C7AB009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_iOS_lib" */;
+			buildPhases = (
+				9BC8CC182996C7AB009FD4A5 /* Sources */,
+				9BC8CC192996C7AB009FD4A5 /* Frameworks */,
+				9BC8CC1A2996C7AB009FD4A5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tlbx_iOS_lib;
+			productName = tlbx_iOS_lib;
+			productReference = 9BC8CC1C2996C7AB009FD4A5 /* libtlbx_iOS_lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9BC8CC322996F04B009FD4A5 /* tlbx_MacOS_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC8CC342996F04B009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_MacOS_lib" */;
+			buildPhases = (
+				9BC8CC2F2996F04B009FD4A5 /* Headers */,
+				9BC8CC302996F04B009FD4A5 /* Sources */,
+				9BC8CC312996F04B009FD4A5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tlbx_MacOS_lib;
+			productName = tlbx_MacOS_lib;
+			productReference = 9BC8CC332996F04B009FD4A5 /* libtlbx_MacOS_lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,6 +311,15 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					9BC8CBD72996C2D5009FD4A5 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					9BC8CBFB2996C73D009FD4A5 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					9BC8CC1B2996C7AB009FD4A5 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					9BC8CC322996F04B009FD4A5 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -166,9 +338,25 @@
 			projectRoot = "";
 			targets = (
 				9BC8CBD72996C2D5009FD4A5 /* tlbx */,
+				9BC8CBFB2996C73D009FD4A5 /* tlbx_iOS_app */,
+				9BC8CC1B2996C7AB009FD4A5 /* tlbx_iOS_lib */,
+				9BC8CC322996F04B009FD4A5 /* tlbx_MacOS_lib */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BC8CBFA2996C73D009FD4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC8CC112996C73F009FD4A5 /* LaunchScreen.storyboard in Resources */,
+				9BC8CC0E2996C73F009FD4A5 /* Assets.xcassets in Resources */,
+				9BC8CC092996C73D009FD4A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BC8CBD42996C2D5009FD4A5 /* Sources */ = {
@@ -176,14 +364,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC8CBF32996C2FC009FD4A5 /* trg.cpp in Sources */,
-				9BC8CBF12996C2FC009FD4A5 /* col.cpp in Sources */,
 				9BC8CBF22996C2FC009FD4A5 /* mth.cpp in Sources */,
 				9BC8CBF42996C2FC009FD4A5 /* str.cpp in Sources */,
 				9BC8CBDC2996C2D5009FD4A5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BC8CBF82996C73D009FD4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC8CC142996C73F009FD4A5 /* main.m in Sources */,
+				9BC8CC062996C73D009FD4A5 /* ViewController.m in Sources */,
+				9BC8CC0C2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodeld in Sources */,
+				9BC8CC002996C73D009FD4A5 /* AppDelegate.m in Sources */,
+				9BC8CC032996C73D009FD4A5 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC8CC182996C7AB009FD4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC8CC252996C8B3009FD4A5 /* ObjC_Interop.mm in Sources */,
+				9BC8CC262996C8B3009FD4A5 /* col.cpp in Sources */,
+				9BC8CC272996C8B3009FD4A5 /* mth.cpp in Sources */,
+				9BC8CC282996C8B3009FD4A5 /* trg.cpp in Sources */,
+				9BC8CC292996C8B3009FD4A5 /* str.cpp in Sources */,
+				9BC8CC202996C7AB009FD4A5 /* tlbx_iOS_lib.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC8CC302996F04B009FD4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC8CC372996F067009FD4A5 /* mth.cpp in Sources */,
+				9BC8CC382996F067009FD4A5 /* trg.cpp in Sources */,
+				9BC8CC392996F067009FD4A5 /* str.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BC8CC072996C73D009FD4A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC8CC082996C73D009FD4A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC8CC0F2996C73F009FD4A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC8CC102996C73F009FD4A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9BC8CBDD2996C2D5009FD4A5 /* Debug */ = {
@@ -282,6 +523,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -317,6 +559,128 @@
 			};
 			name = Release;
 		};
+		9BC8CC162996C73F009FD4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tlbx_iOS_app/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spahrenk-gmail.com.tlbx-iOS-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BC8CC172996C73F009FD4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tlbx_iOS_app/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spahrenk-gmail.com.tlbx-iOS-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BC8CC232996C7AB009FD4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BC8CC242996C7AB009FD4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BC8CC352996F04B009FD4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9BC8CC362996F04B009FD4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,7 +702,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9BC8CC152996C73F009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_iOS_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC8CC162996C73F009FD4A5 /* Debug */,
+				9BC8CC172996C73F009FD4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC8CC222996C7AB009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_iOS_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC8CC232996C7AB009FD4A5 /* Debug */,
+				9BC8CC242996C7AB009FD4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC8CC342996F04B009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_MacOS_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC8CC352996F04B009FD4A5 /* Debug */,
+				9BC8CC362996F04B009FD4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BC8CC0A2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BC8CC0B2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodel */,
+			);
+			currentVersion = 9BC8CC0B2996C73D009FD4A5 /* tlbx_iOS_app.xcdatamodel */;
+			path = tlbx_iOS_app.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9BC8CBD02996C2D5009FD4A5 /* Project object */;
 }
