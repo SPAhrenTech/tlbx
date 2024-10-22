@@ -1,19 +1,23 @@
+// trigenomtry - P. Ahrenkiel
 
 #ifndef _TRG_
 #define _TRG_
 
-extern double degtorad;
+#include <cstdlib>
+#include <math.h>
 
-extern double Pi; 
-//trg 
-double asincos(double s, double c); 
-double asintan(double s, double t);  
-double acossin(double c, double s); 
-double acostan(double c, double t);  
-double atansin(double t, double s); 
-double atancos(double t, double c);  
-//special function(s) 
+namespace trg {
 
+inline const double Pi(4.*atan(1.));
+inline const double degtorad(180./Pi);
+
+//trg
+inline double asincos(double s, double c){return atan2(s,c);}
+inline double acossin(double c, double s){return atan2(s,c);}
+
+//special function(s)
 double sinc(double x);
-#endif 
-#pragma once
+
+} // namespace trg
+
+#endif

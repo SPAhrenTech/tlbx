@@ -1,61 +1,61 @@
-/*
-Colors - P. Ahrenkiel
-*/
+//colors - P. Ahrenkiel
 
 #ifndef _COL_
 #define _COL_
 
-//#include <Carbon/Carbon.h>
-#import "CoreGraphics/CoreGraphics.h"
-
-//
-class col
+class colRGB
 {
-private:
-	float m_red,m_green,m_blue,m_alpha;
+protected:
+	float _red,_green,_blue;
 
 public:
-	col(const float r=0.,const float g=0.,const float b=0.,const float a=1.);
-	~col();
+	constexpr colRGB():_red(0),_green(0),_blue(0){}
+	constexpr colRGB(const float r,const float g,const float b):_red(r),_green(g),_blue(b){}
 
+	float& red(){return _red;}
+	float& green(){return _green;}
+	float& blue(){return _blue;}
+
+	float red() const{return _red;}
+	float green() const{return _green;}
+	float blue() const{return _blue;}
+
+	colRGB operator+(const colRGB& c) const;
+	colRGB operator-(const colRGB& c) const;
+	colRGB operator/(const float x) const;
+	friend colRGB operator*(const float x,const colRGB& c);
+
+	static const colRGB Black;
+	static const colRGB White;
+	static const colRGB Red;
+	static const colRGB Green;
+	static const colRGB Blue;
+	static const colRGB Yellow;
+	static const colRGB Magenta;
+	static const colRGB Cyan;
+	
+};
+
+//
+class col:public colRGB
+{
+private:
+	float _alpha;
+
+public:
+	constexpr col():colRGB(),_alpha(1){}
+	constexpr col(const float r,const float g,const float b,const float a=1.0):colRGB(r,g,b),_alpha(a){}
+	constexpr col(const colRGB &crgb,const float a=1.0):colRGB(crgb),_alpha(a){}
+	
 	col operator+(const col& c) const;
 	col operator-(const col& c) const;
 	
-	CGColorRef cgColor() const;
-
-	float& red(){return m_red;}
-	float& green(){return m_green;}
-	float& blue(){return m_blue;}
-	float& alpha(){return m_alpha;}
-	
-	const float red() const{return m_red;}
-	const float green() const{return m_green;}
-	const float blue() const{return m_blue;}
-	const float alpha() const{return m_alpha;}
+	float& alpha(){return _alpha;}
+	float alpha() const{return _alpha;}
 
 	col operator/(const float x) const;
 	friend col operator*(const float x,const col& c);
-
-	void setFill(CGContextRef &context) const;
-	void setStroke(CGContextRef &context) const;
-
-	void setFill(CGContextRef &context,const float alph) const;
-	void setStroke(CGContextRef &context,const float alph) const;
-
-	//fl_err read(tfl &f);
 };
-
-extern const col 
-	blackcol,
-	whitecol,
-	
-	redcol,
-	greencol,
-	bluecol,
-	
-	yellowcol,
-	magentacol,
-	cyancol;
 
 #endif
 

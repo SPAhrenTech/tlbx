@@ -14,6 +14,14 @@
 		9B88E9CC2CC5C7FD003B1AB3 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */; };
 		9B88E9CD2CC5C7FD003B1AB3 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */; };
 		9B88E9CE2CC5C7FD003B1AB3 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */; };
+		9B88E9FE2CC72EB0003B1AB3 /* tlbx.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */; };
+		9B88E9FF2CC72EB0003B1AB3 /* mth.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B62CC5C38E003B1AB3 /* mth.hpp */; };
+		9B88EA002CC72EB0003B1AB3 /* str.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B72CC5C38E003B1AB3 /* str.hpp */; };
+		9B88EA012CC72EB0003B1AB3 /* trg.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B82CC5C38E003B1AB3 /* trg.hpp */; };
+		9B88EA022CC72EB0003B1AB3 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */; };
+		9B88EA032CC72EB0003B1AB3 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */; };
+		9B88EA042CC72EB0003B1AB3 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */; };
+		9B88EA1D2CC72ED2003B1AB3 /* ObjC_Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */; };
 		9BC8CC2B2996CD22009FD4A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */; };
 		9BC8CC2C2996CD2D009FD4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
@@ -31,13 +39,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B88E9B62CC5C38E003B1AB3 /* mth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mth.hpp; sourceTree = "<group>"; };
+		9B88E9B62CC5C38E003B1AB3 /* mth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mth.hpp; path = headers/mth.hpp; sourceTree = SOURCE_ROOT; };
 		9B88E9B72CC5C38E003B1AB3 /* str.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = str.hpp; sourceTree = "<group>"; };
 		9B88E9B82CC5C38E003B1AB3 /* trg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trg.hpp; sourceTree = "<group>"; };
-		9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = tlbx.hpp; path = tlbx/tlbx.hpp; sourceTree = "<group>"; };
+		9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tlbx.hpp; sourceTree = "<group>"; };
 		9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mth.cpp; sourceTree = "<group>"; };
 		9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = str.cpp; sourceTree = "<group>"; };
 		9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trg.cpp; sourceTree = "<group>"; };
+		9B88EA0F2CC72ED1003B1AB3 /* cppBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cppBridge.h; sourceTree = "<group>"; };
+		9B88EA102CC72ED1003B1AB3 /* ObjC_Interop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjC_Interop.h; sourceTree = "<group>"; };
+		9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_Interop.mm; path = ../../../arr/tlbx/iOS_bridge/sources/ObjC_Interop.mm; sourceTree = "<group>"; };
 		9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9BC8CC1C2996C7AB009FD4A5 /* libtlbx_iOS_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtlbx_iOS_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -71,8 +82,7 @@
 				9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */,
 				9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */,
 			);
-			name = sources;
-			path = tlbx/sources;
+			path = sources;
 			sourceTree = "<group>";
 		};
 		9B88E9B92CC5C38E003B1AB3 /* headers */ = {
@@ -82,8 +92,33 @@
 				9B88E9B72CC5C38E003B1AB3 /* str.hpp */,
 				9B88E9B82CC5C38E003B1AB3 /* trg.hpp */,
 			);
-			name = headers;
-			path = tlbx/headers;
+			path = headers;
+			sourceTree = "<group>";
+		};
+		9B88EA112CC72ED1003B1AB3 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				9B88EA0F2CC72ED1003B1AB3 /* cppBridge.h */,
+				9B88EA102CC72ED1003B1AB3 /* ObjC_Interop.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		9B88EA142CC72ED1003B1AB3 /* iOS_bridge */ = {
+			isa = PBXGroup;
+			children = (
+				9B88EA112CC72ED1003B1AB3 /* headers */,
+				9B88EA162CC72ED1003B1AB3 /* sources */,
+			);
+			path = iOS_bridge;
+			sourceTree = "<group>";
+		};
+		9B88EA162CC72ED1003B1AB3 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */,
+			);
+			path = sources;
 			sourceTree = "<group>";
 		};
 		9BC8CBCF2996C2D5009FD4A5 = {
@@ -92,6 +127,7 @@
 				9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */,
 				9B88E9B92CC5C38E003B1AB3 /* headers */,
 				9B88E9B42CC5C38E003B1AB3 /* sources */,
+				9B88EA142CC72ED1003B1AB3 /* iOS_bridge */,
 				9BC8CBD92996C2D5009FD4A5 /* Products */,
 				9BC8CBF52996C414009FD4A5 /* Frameworks */,
 			);
@@ -203,6 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B88E9FE2CC72EB0003B1AB3 /* tlbx.hpp in Sources */,
+				9B88E9FF2CC72EB0003B1AB3 /* mth.hpp in Sources */,
+				9B88EA002CC72EB0003B1AB3 /* str.hpp in Sources */,
+				9B88EA012CC72EB0003B1AB3 /* trg.hpp in Sources */,
+				9B88EA022CC72EB0003B1AB3 /* mth.cpp in Sources */,
+				9B88EA032CC72EB0003B1AB3 /* str.cpp in Sources */,
+				9B88EA042CC72EB0003B1AB3 /* trg.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +258,7 @@
 				9B88E9CA2CC5C7FD003B1AB3 /* str.hpp in Sources */,
 				9B88E9CB2CC5C7FD003B1AB3 /* trg.hpp in Sources */,
 				9B88E9CC2CC5C7FD003B1AB3 /* mth.cpp in Sources */,
+				9B88EA1D2CC72ED2003B1AB3 /* ObjC_Interop.mm in Sources */,
 				9B88E9CD2CC5C7FD003B1AB3 /* str.cpp in Sources */,
 				9B88E9CE2CC5C7FD003B1AB3 /* trg.cpp in Sources */,
 			);
