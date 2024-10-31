@@ -21,9 +21,9 @@
 		9B88EA022CC72EB0003B1AB3 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */; };
 		9B88EA032CC72EB0003B1AB3 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */; };
 		9B88EA042CC72EB0003B1AB3 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */; };
-		9B88EA1D2CC72ED2003B1AB3 /* ObjC_Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */; };
 		9BC8CC2B2996CD22009FD4A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */; };
 		9BC8CC2C2996CD2D009FD4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */; };
+		9BE96F922CD42F0200F40FC1 /* ObjC_Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -239,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE96F922CD42F0200F40FC1 /* ObjC_Interop.mm in Sources */,
 				9B88E9FE2CC72EB0003B1AB3 /* tlbx.hpp in Sources */,
 				9B88E9FF2CC72EB0003B1AB3 /* mth.hpp in Sources */,
 				9B88EA002CC72EB0003B1AB3 /* str.hpp in Sources */,
@@ -258,7 +259,6 @@
 				9B88E9CA2CC5C7FD003B1AB3 /* str.hpp in Sources */,
 				9B88E9CB2CC5C7FD003B1AB3 /* trg.hpp in Sources */,
 				9B88E9CC2CC5C7FD003B1AB3 /* mth.cpp in Sources */,
-				9B88EA1D2CC72ED2003B1AB3 /* ObjC_Interop.mm in Sources */,
 				9B88E9CD2CC5C7FD003B1AB3 /* str.cpp in Sources */,
 				9B88E9CE2CC5C7FD003B1AB3 /* trg.cpp in Sources */,
 			);
