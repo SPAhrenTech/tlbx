@@ -3,31 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B88E9C72CC5C7FD003B1AB3 /* tlbx.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */; };
-		9B88E9C92CC5C7FD003B1AB3 /* mth.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B62CC5C38E003B1AB3 /* mth.hpp */; };
-		9B88E9CA2CC5C7FD003B1AB3 /* str.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B72CC5C38E003B1AB3 /* str.hpp */; };
-		9B88E9CB2CC5C7FD003B1AB3 /* trg.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B82CC5C38E003B1AB3 /* trg.hpp */; };
-		9B88E9CC2CC5C7FD003B1AB3 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */; };
-		9B88E9CD2CC5C7FD003B1AB3 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */; };
-		9B88E9CE2CC5C7FD003B1AB3 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */; };
-		9B88E9FE2CC72EB0003B1AB3 /* tlbx.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */; };
-		9B88E9FF2CC72EB0003B1AB3 /* mth.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B62CC5C38E003B1AB3 /* mth.hpp */; };
-		9B88EA002CC72EB0003B1AB3 /* str.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B72CC5C38E003B1AB3 /* str.hpp */; };
-		9B88EA012CC72EB0003B1AB3 /* trg.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9B82CC5C38E003B1AB3 /* trg.hpp */; };
-		9B88EA022CC72EB0003B1AB3 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */; };
-		9B88EA032CC72EB0003B1AB3 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */; };
-		9B88EA042CC72EB0003B1AB3 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */; };
-		9BC8CC2B2996CD22009FD4A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */; };
-		9BC8CC2C2996CD2D009FD4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */; };
-		9BE96F922CD42F0200F40FC1 /* ObjC_Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */; };
+		9BE9714A2CD57F0500F40FC1 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BE971392CD57F0400F40FC1 /* mth.cpp */; };
+		9BE9714B2CD57F0500F40FC1 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9713A2CD57F0400F40FC1 /* str.cpp */; };
+		9BE9714C2CD57F0500F40FC1 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9713B2CD57F0400F40FC1 /* trg.cpp */; };
+		9BE9714D2CD57F0500F40FC1 /* tlbx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9BE9713D2CD57F0400F40FC1 /* tlbx.hpp */; };
+		9BE9714E2CD57F0500F40FC1 /* cppBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE9713E2CD57F0500F40FC1 /* cppBridge.h */; };
+		9BE9714F2CD57F0500F40FC1 /* ObjC_Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE9713F2CD57F0500F40FC1 /* ObjC_Interop.h */; };
+		9BE971512CD57F0500F40FC1 /* col.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9BE971442CD57F0500F40FC1 /* col.hpp */; };
+		9BE971522CD57F0500F40FC1 /* mth.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9BE971452CD57F0500F40FC1 /* mth.hpp */; };
+		9BE971532CD57F0500F40FC1 /* str.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9BE971462CD57F0500F40FC1 /* str.hpp */; };
+		9BE971542CD57F0500F40FC1 /* trg.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9BE971472CD57F0500F40FC1 /* trg.hpp */; };
+		9BE971622CD57F5500F40FC1 /* col.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BE971382CD57F0400F40FC1 /* col.cpp */; };
+		9BE971632CD57F5500F40FC1 /* mth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BE971392CD57F0400F40FC1 /* mth.cpp */; };
+		9BE971642CD57F5500F40FC1 /* str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9713A2CD57F0400F40FC1 /* str.cpp */; };
+		9BE971652CD57F5500F40FC1 /* trg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9713B2CD57F0400F40FC1 /* trg.cpp */; };
+		9BE971662CD57F5500F40FC1 /* ObjC_Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BE971412CD57F0500F40FC1 /* ObjC_Interop.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9BC8CC1A2996C7AB009FD4A5 /* CopyFiles */ = {
+		9BE971572CD57F3400F40FC1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -39,33 +37,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B88E9B62CC5C38E003B1AB3 /* mth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mth.hpp; path = headers/mth.hpp; sourceTree = SOURCE_ROOT; };
-		9B88E9B72CC5C38E003B1AB3 /* str.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = str.hpp; sourceTree = "<group>"; };
-		9B88E9B82CC5C38E003B1AB3 /* trg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trg.hpp; sourceTree = "<group>"; };
-		9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tlbx.hpp; sourceTree = "<group>"; };
-		9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mth.cpp; sourceTree = "<group>"; };
-		9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = str.cpp; sourceTree = "<group>"; };
-		9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trg.cpp; sourceTree = "<group>"; };
-		9B88EA0F2CC72ED1003B1AB3 /* cppBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cppBridge.h; sourceTree = "<group>"; };
-		9B88EA102CC72ED1003B1AB3 /* ObjC_Interop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjC_Interop.h; sourceTree = "<group>"; };
-		9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjC_Interop.mm; path = ../../../arr/tlbx/iOS_bridge/sources/ObjC_Interop.mm; sourceTree = "<group>"; };
-		9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9BC8CC1C2996C7AB009FD4A5 /* libtlbx_iOS_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtlbx_iOS_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9BC8CC332996F04B009FD4A5 /* libtlbx_MacOS_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtlbx_MacOS_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE971312CD57ED700F40FC1 /* libtlbx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtlbx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE971382CD57F0400F40FC1 /* col.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = col.cpp; sourceTree = "<group>"; };
+		9BE971392CD57F0400F40FC1 /* mth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mth.cpp; sourceTree = "<group>"; };
+		9BE9713A2CD57F0400F40FC1 /* str.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = str.cpp; sourceTree = "<group>"; };
+		9BE9713B2CD57F0400F40FC1 /* trg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trg.cpp; sourceTree = "<group>"; };
+		9BE9713D2CD57F0400F40FC1 /* tlbx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tlbx.hpp; sourceTree = "<group>"; };
+		9BE9713E2CD57F0500F40FC1 /* cppBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cppBridge.h; sourceTree = "<group>"; };
+		9BE9713F2CD57F0500F40FC1 /* ObjC_Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjC_Interop.h; sourceTree = "<group>"; };
+		9BE971412CD57F0500F40FC1 /* ObjC_Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjC_Interop.mm; sourceTree = "<group>"; };
+		9BE971442CD57F0500F40FC1 /* col.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = col.hpp; sourceTree = "<group>"; };
+		9BE971452CD57F0500F40FC1 /* mth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mth.hpp; sourceTree = "<group>"; };
+		9BE971462CD57F0500F40FC1 /* str.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = str.hpp; sourceTree = "<group>"; };
+		9BE971472CD57F0500F40FC1 /* trg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trg.hpp; sourceTree = "<group>"; };
+		9BE971592CD57F3400F40FC1 /* libtlbx_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtlbx_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9BC8CC192996C7AB009FD4A5 /* Frameworks */ = {
+		9BE9712F2CD57ED700F40FC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC8CC2C2996CD2D009FD4A5 /* CoreGraphics.framework in Frameworks */,
-				9BC8CC2B2996CD22009FD4A5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BC8CC312996F04B009FD4A5 /* Frameworks */ = {
+		9BE971562CD57F3400F40FC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,205 +71,198 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B88E9B42CC5C38E003B1AB3 /* sources */ = {
+		9BE971282CD57ED700F40FC1 = {
 			isa = PBXGroup;
 			children = (
-				9B88E9BB2CC5C3C4003B1AB3 /* mth.cpp */,
-				9B88E9BC2CC5C3C4003B1AB3 /* str.cpp */,
-				9B88E9BE2CC5C3C4003B1AB3 /* trg.cpp */,
-			);
-			path = sources;
-			sourceTree = "<group>";
-		};
-		9B88E9B92CC5C38E003B1AB3 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				9B88E9B62CC5C38E003B1AB3 /* mth.hpp */,
-				9B88E9B72CC5C38E003B1AB3 /* str.hpp */,
-				9B88E9B82CC5C38E003B1AB3 /* trg.hpp */,
-			);
-			path = headers;
-			sourceTree = "<group>";
-		};
-		9B88EA112CC72ED1003B1AB3 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				9B88EA0F2CC72ED1003B1AB3 /* cppBridge.h */,
-				9B88EA102CC72ED1003B1AB3 /* ObjC_Interop.h */,
-			);
-			path = headers;
-			sourceTree = "<group>";
-		};
-		9B88EA142CC72ED1003B1AB3 /* iOS_bridge */ = {
-			isa = PBXGroup;
-			children = (
-				9B88EA112CC72ED1003B1AB3 /* headers */,
-				9B88EA162CC72ED1003B1AB3 /* sources */,
-			);
-			path = iOS_bridge;
-			sourceTree = "<group>";
-		};
-		9B88EA162CC72ED1003B1AB3 /* sources */ = {
-			isa = PBXGroup;
-			children = (
-				9B88EA172CC72ED1003B1AB3 /* ObjC_Interop.mm */,
-			);
-			path = sources;
-			sourceTree = "<group>";
-		};
-		9BC8CBCF2996C2D5009FD4A5 = {
-			isa = PBXGroup;
-			children = (
-				9B88E9BA2CC5C38E003B1AB3 /* tlbx.hpp */,
-				9B88E9B92CC5C38E003B1AB3 /* headers */,
-				9B88E9B42CC5C38E003B1AB3 /* sources */,
-				9B88EA142CC72ED1003B1AB3 /* iOS_bridge */,
-				9BC8CBD92996C2D5009FD4A5 /* Products */,
-				9BC8CBF52996C414009FD4A5 /* Frameworks */,
+				9BE971482CD57F0500F40FC1 /* headers */,
+				9BE9713C2CD57F0400F40FC1 /* sources */,
+				9BE971432CD57F0500F40FC1 /* iOS_bridge */,
+				9BE9713D2CD57F0400F40FC1 /* tlbx.hpp */,
+				9BE971322CD57ED700F40FC1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9BC8CBD92996C2D5009FD4A5 /* Products */ = {
+		9BE971322CD57ED700F40FC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BC8CC1C2996C7AB009FD4A5 /* libtlbx_iOS_lib.a */,
-				9BC8CC332996F04B009FD4A5 /* libtlbx_MacOS_lib.a */,
+				9BE971312CD57ED700F40FC1 /* libtlbx.a */,
+				9BE971592CD57F3400F40FC1 /* libtlbx_iOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9BC8CBF52996C414009FD4A5 /* Frameworks */ = {
+		9BE9713C2CD57F0400F40FC1 /* sources */ = {
 			isa = PBXGroup;
 			children = (
-				9BC8CC2A2996CD22009FD4A5 /* UIKit.framework */,
-				9BC8CBF62996C414009FD4A5 /* CoreGraphics.framework */,
+				9BE971382CD57F0400F40FC1 /* col.cpp */,
+				9BE971392CD57F0400F40FC1 /* mth.cpp */,
+				9BE9713A2CD57F0400F40FC1 /* str.cpp */,
+				9BE9713B2CD57F0400F40FC1 /* trg.cpp */,
 			);
-			name = Frameworks;
+			path = sources;
+			sourceTree = "<group>";
+		};
+		9BE971402CD57F0500F40FC1 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				9BE9713E2CD57F0500F40FC1 /* cppBridge.h */,
+				9BE9713F2CD57F0500F40FC1 /* ObjC_Interop.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		9BE971422CD57F0500F40FC1 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				9BE971412CD57F0500F40FC1 /* ObjC_Interop.mm */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		9BE971432CD57F0500F40FC1 /* iOS_bridge */ = {
+			isa = PBXGroup;
+			children = (
+				9BE971402CD57F0500F40FC1 /* headers */,
+				9BE971422CD57F0500F40FC1 /* sources */,
+			);
+			path = iOS_bridge;
+			sourceTree = "<group>";
+		};
+		9BE971482CD57F0500F40FC1 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				9BE971442CD57F0500F40FC1 /* col.hpp */,
+				9BE971452CD57F0500F40FC1 /* mth.hpp */,
+				9BE971462CD57F0500F40FC1 /* str.hpp */,
+				9BE971472CD57F0500F40FC1 /* trg.hpp */,
+			);
+			path = headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9BC8CC2F2996F04B009FD4A5 /* Headers */ = {
+		9BE9712D2CD57ED700F40FC1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE971532CD57F0500F40FC1 /* str.hpp in Headers */,
+				9BE971542CD57F0500F40FC1 /* trg.hpp in Headers */,
+				9BE9714D2CD57F0500F40FC1 /* tlbx.hpp in Headers */,
+				9BE9714E2CD57F0500F40FC1 /* cppBridge.h in Headers */,
+				9BE9714F2CD57F0500F40FC1 /* ObjC_Interop.h in Headers */,
+				9BE971522CD57F0500F40FC1 /* mth.hpp in Headers */,
+				9BE971512CD57F0500F40FC1 /* col.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9BC8CC1B2996C7AB009FD4A5 /* tlbx_iOS_lib */ = {
+		9BE971302CD57ED700F40FC1 /* tlbx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BC8CC222996C7AB009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_iOS_lib" */;
+			buildConfigurationList = 9BE971352CD57ED700F40FC1 /* Build configuration list for PBXNativeTarget "tlbx" */;
 			buildPhases = (
-				9BC8CC182996C7AB009FD4A5 /* Sources */,
-				9BC8CC192996C7AB009FD4A5 /* Frameworks */,
-				9BC8CC1A2996C7AB009FD4A5 /* CopyFiles */,
+				9BE9712D2CD57ED700F40FC1 /* Headers */,
+				9BE9712E2CD57ED700F40FC1 /* Sources */,
+				9BE9712F2CD57ED700F40FC1 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = tlbx_iOS_lib;
-			productName = tlbx_iOS_lib;
-			productReference = 9BC8CC1C2996C7AB009FD4A5 /* libtlbx_iOS_lib.a */;
+			name = tlbx;
+			productName = tlbx;
+			productReference = 9BE971312CD57ED700F40FC1 /* libtlbx.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9BC8CC322996F04B009FD4A5 /* tlbx_MacOS_lib */ = {
+		9BE971582CD57F3400F40FC1 /* tlbx_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BC8CC342996F04B009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_MacOS_lib" */;
+			buildConfigurationList = 9BE9715F2CD57F3400F40FC1 /* Build configuration list for PBXNativeTarget "tlbx_iOS" */;
 			buildPhases = (
-				9BC8CC2F2996F04B009FD4A5 /* Headers */,
-				9BC8CC302996F04B009FD4A5 /* Sources */,
-				9BC8CC312996F04B009FD4A5 /* Frameworks */,
+				9BE971552CD57F3400F40FC1 /* Sources */,
+				9BE971562CD57F3400F40FC1 /* Frameworks */,
+				9BE971572CD57F3400F40FC1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = tlbx_MacOS_lib;
-			productName = tlbx_MacOS_lib;
-			productReference = 9BC8CC332996F04B009FD4A5 /* libtlbx_MacOS_lib.a */;
+			name = tlbx_iOS;
+			productName = tlbx_iOS;
+			productReference = 9BE971592CD57F3400F40FC1 /* libtlbx_iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9BC8CBD02996C2D5009FD4A5 /* Project object */ = {
+		9BE971292CD57ED700F40FC1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					9BC8CC1B2996C7AB009FD4A5 = {
-						CreatedOnToolsVersion = 13.4.1;
+					9BE971302CD57ED700F40FC1 = {
+						CreatedOnToolsVersion = 15.4;
 					};
-					9BC8CC322996F04B009FD4A5 = {
-						CreatedOnToolsVersion = 13.4.1;
+					9BE971582CD57F3400F40FC1 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 9BC8CBD32996C2D5009FD4A5 /* Build configuration list for PBXProject "tlbx" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = 9BE9712C2CD57ED700F40FC1 /* Build configuration list for PBXProject "tlbx" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 9BC8CBCF2996C2D5009FD4A5;
-			productRefGroup = 9BC8CBD92996C2D5009FD4A5 /* Products */;
+			mainGroup = 9BE971282CD57ED700F40FC1;
+			productRefGroup = 9BE971322CD57ED700F40FC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9BC8CC1B2996C7AB009FD4A5 /* tlbx_iOS_lib */,
-				9BC8CC322996F04B009FD4A5 /* tlbx_MacOS_lib */,
+				9BE971302CD57ED700F40FC1 /* tlbx */,
+				9BE971582CD57F3400F40FC1 /* tlbx_iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9BC8CC182996C7AB009FD4A5 /* Sources */ = {
+		9BE9712E2CD57ED700F40FC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE96F922CD42F0200F40FC1 /* ObjC_Interop.mm in Sources */,
-				9B88E9FE2CC72EB0003B1AB3 /* tlbx.hpp in Sources */,
-				9B88E9FF2CC72EB0003B1AB3 /* mth.hpp in Sources */,
-				9B88EA002CC72EB0003B1AB3 /* str.hpp in Sources */,
-				9B88EA012CC72EB0003B1AB3 /* trg.hpp in Sources */,
-				9B88EA022CC72EB0003B1AB3 /* mth.cpp in Sources */,
-				9B88EA032CC72EB0003B1AB3 /* str.cpp in Sources */,
-				9B88EA042CC72EB0003B1AB3 /* trg.cpp in Sources */,
+				9BE9714B2CD57F0500F40FC1 /* str.cpp in Sources */,
+				9BE9714C2CD57F0500F40FC1 /* trg.cpp in Sources */,
+				9BE9714A2CD57F0500F40FC1 /* mth.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BC8CC302996F04B009FD4A5 /* Sources */ = {
+		9BE971552CD57F3400F40FC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B88E9C72CC5C7FD003B1AB3 /* tlbx.hpp in Sources */,
-				9B88E9C92CC5C7FD003B1AB3 /* mth.hpp in Sources */,
-				9B88E9CA2CC5C7FD003B1AB3 /* str.hpp in Sources */,
-				9B88E9CB2CC5C7FD003B1AB3 /* trg.hpp in Sources */,
-				9B88E9CC2CC5C7FD003B1AB3 /* mth.cpp in Sources */,
-				9B88E9CD2CC5C7FD003B1AB3 /* str.cpp in Sources */,
-				9B88E9CE2CC5C7FD003B1AB3 /* trg.cpp in Sources */,
+				9BE971622CD57F5500F40FC1 /* col.cpp in Sources */,
+				9BE971632CD57F5500F40FC1 /* mth.cpp in Sources */,
+				9BE971642CD57F5500F40FC1 /* str.cpp in Sources */,
+				9BE971652CD57F5500F40FC1 /* trg.cpp in Sources */,
+				9BE971662CD57F5500F40FC1 /* ObjC_Interop.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9BC8CBDD2996C2D5009FD4A5 /* Debug */ = {
+		9BE971332CD57ED700F40FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -303,21 +292,20 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,13 +313,14 @@
 			};
 			name = Debug;
 		};
-		9BC8CBDE2996C2D5009FD4A5 /* Release */ = {
+		9BE971342CD57ED700F40FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -361,33 +350,52 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		9BC8CC232996C7AB009FD4A5 /* Debug */ = {
+		9BE971362CD57ED700F40FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5B4FJ76P7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9BE971372CD57ED700F40FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9BE971602CD57F3400F40FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5B4FJ76P7;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -396,17 +404,12 @@
 			};
 			name = Debug;
 		};
-		9BC8CC242996C7AB009FD4A5 /* Release */ = {
+		9BE971612CD57F3400F40FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5B4FJ76P7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -416,59 +419,37 @@
 			};
 			name = Release;
 		};
-		9BC8CC352996F04B009FD4A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5B4FJ76P7;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9BC8CC362996F04B009FD4A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5B4FJ76P7;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BC8CBD32996C2D5009FD4A5 /* Build configuration list for PBXProject "tlbx" */ = {
+		9BE9712C2CD57ED700F40FC1 /* Build configuration list for PBXProject "tlbx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BC8CBDD2996C2D5009FD4A5 /* Debug */,
-				9BC8CBDE2996C2D5009FD4A5 /* Release */,
+				9BE971332CD57ED700F40FC1 /* Debug */,
+				9BE971342CD57ED700F40FC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BC8CC222996C7AB009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_iOS_lib" */ = {
+		9BE971352CD57ED700F40FC1 /* Build configuration list for PBXNativeTarget "tlbx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BC8CC232996C7AB009FD4A5 /* Debug */,
-				9BC8CC242996C7AB009FD4A5 /* Release */,
+				9BE971362CD57ED700F40FC1 /* Debug */,
+				9BE971372CD57ED700F40FC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BC8CC342996F04B009FD4A5 /* Build configuration list for PBXNativeTarget "tlbx_MacOS_lib" */ = {
+		9BE9715F2CD57F3400F40FC1 /* Build configuration list for PBXNativeTarget "tlbx_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BC8CC352996F04B009FD4A5 /* Debug */,
-				9BC8CC362996F04B009FD4A5 /* Release */,
+				9BE971602CD57F3400F40FC1 /* Debug */,
+				9BE971612CD57F3400F40FC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9BC8CBD02996C2D5009FD4A5 /* Project object */;
+	rootObject = 9BE971292CD57ED700F40FC1 /* Project object */;
 }
