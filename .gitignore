@@ -36,4 +36,4 @@ builds/
 *.out
 *.app
 
-tlbx.xcodeproj/xcuserdata/phil3.xcuserdatad/xcschemes/xcschememanagement.plist
+tlbx.xcodeproj/xcuserdata/phil3.xcuserdatad/*
