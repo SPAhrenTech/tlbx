@@ -1,2 +1,1 @@
-# arr
- C++ array/matrix utilities
+This branch does not use CMake. It is organized for Xcode.

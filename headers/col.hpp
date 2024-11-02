@@ -9,8 +9,8 @@ protected:
 	float _red,_green,_blue;
 
 public:
-	constexpr colRGB():_red(0),_green(0),_blue(0){}
-	constexpr colRGB(const float r,const float g,const float b):_red(r),_green(g),_blue(b){}
+	colRGB():_red(0),_green(0),_blue(0){}
+	colRGB(const float r,const float g,const float b):_red(r),_green(g),_blue(b){}
 
 	float& red(){return _red;}
 	float& green(){return _green;}
@@ -43,9 +43,9 @@ private:
 	float _alpha;
 
 public:
-	constexpr col():colRGB(),_alpha(1){}
-	constexpr col(const float r,const float g,const float b,const float a=1.0):colRGB(r,g,b),_alpha(a){}
-	constexpr col(const colRGB &crgb,const float a=1.0):colRGB(crgb),_alpha(a){}
+	col():colRGB(),_alpha(1){}
+	col(const float r,const float g,const float b,const float a=1.0):colRGB(r,g,b),_alpha(a){}
+	col(const colRGB &crgb,const float a=1.0):colRGB(crgb),_alpha(a){}
 	
 	col operator+(const col& c) const;
 	col operator-(const col& c) const;
