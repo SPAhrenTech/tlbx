@@ -4,14 +4,14 @@
 #include <math.h>
 #include "col.hpp"
 
-constexpr colRGB colRGB::Black(0.,0.,0.);
-constexpr colRGB colRGB::White(1.,1.,1.);
-constexpr colRGB colRGB::Red(1.,0.,0.);
-constexpr colRGB colRGB::Green(0.,1.,0.);
-constexpr colRGB colRGB::Blue(0.,0.,1.);
-constexpr colRGB colRGB::Yellow(1.,1.,0.);
-constexpr colRGB colRGB::Magenta(1.,0.,1.);
-constexpr colRGB colRGB::Cyan(1.,0.,1.);
+const colRGB colRGB::Black(0.,0.,0.);
+const colRGB colRGB::White(1.,1.,1.);
+const colRGB colRGB::Red(1.,0.,0.);
+const colRGB colRGB::Green(0.,1.,0.);
+const colRGB colRGB::Blue(0.,0.,1.);
+const colRGB colRGB::Yellow(1.,1.,0.);
+const colRGB colRGB::Magenta(1.,0.,1.);
+const colRGB colRGB::Cyan(1.,0.,1.);
 
 //
 colRGB colRGB::operator+(const colRGB& c) const
