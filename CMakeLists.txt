@@ -6,7 +6,7 @@ file(GLOB_RECURSE cpp_sources sources/*.cpp)
 set(cpp_srcs ${PROJECT_NAME}.hpp ${cpp_headers} ${cpp_sources})
 
 add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
-        v
+
 # Enable include with <> pair
 message(STATUS "project ${CMAKE_PROJECT_NAME}")
 if(${CMAKE_PROJECT_NAME} STREQUAL "tlbx")
