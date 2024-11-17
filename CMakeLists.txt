@@ -6,13 +6,13 @@ file(GLOB_RECURSE cpp_sources sources/*.cpp)
 set(cpp_srcs ${PROJECT_NAME}.hpp ${cpp_headers} ${cpp_sources})
 
 add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
-        
+        v
 # Enable include with <> pair
 message(STATUS "project ${CMAKE_PROJECT_NAME}")
 if(${CMAKE_PROJECT_NAME} STREQUAL "tlbx")
     target_include_directories(${PROJECT_NAME} PUBLIC . headers)
 else()
-    target_include_directories(${PROJECT_NAME} PUBLIC . ${CMAKE_SOURCE_DIR}/tlbx/headers)
+    target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/tlbx/. ${CMAKE_SOURCE_DIR}/tlbx/headers)
 endif()
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
