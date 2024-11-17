@@ -8,7 +8,7 @@ set(cpp_srcs ${PROJECT_NAME}.hpp ${cpp_headers} ${cpp_sources})
 add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
         
 # Enable include with <> pair
-target_include_directories(${PROJECT_NAME} PUBLIC headers)
+target_include_directories(${PROJECT_NAME} PUBLIC . headers)
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 
