@@ -9,11 +9,8 @@ add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
 
 # Enable include with <> pair
 message(STATUS "project ${CMAKE_PROJECT_NAME}")
-if(${CMAKE_PROJECT_NAME} STREQUAL "tlbx")
-    target_include_directories(${PROJECT_NAME} PUBLIC . headers)
-else()
-    target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/tlbx/. ${CMAKE_SOURCE_DIR}/tlbx/headers)
-endif()
+target_include_directories(${PROJECT_NAME} PUBLIC
+    . headers)
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 
