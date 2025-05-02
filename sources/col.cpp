@@ -1,22 +1,24 @@
-//colors - P. Ahrenkiel
+//RGBAors - P. Ahrenkiel
 
 #include <cstdlib>
 #include <math.h>
 #include "col.hpp"
 
-const colRGB colRGB::Black(0.,0.,0.);
-const colRGB colRGB::White(1.,1.,1.);
-const colRGB colRGB::Red(1.,0.,0.);
-const colRGB colRGB::Green(0.,1.,0.);
-const colRGB colRGB::Blue(0.,0.,1.);
-const colRGB colRGB::Yellow(1.,1.,0.);
-const colRGB colRGB::Magenta(1.,0.,1.);
-const colRGB colRGB::Cyan(1.,0.,1.);
+namespace col {
+
+const RGB RGB::Black(0.,0.,0.);
+const RGB RGB::White(1.,1.,1.);
+const RGB RGB::Red(1.,0.,0.);
+const RGB RGB::Green(0.,1.,0.);
+const RGB RGB::Blue(0.,0.,1.);
+const RGB RGB::Yellow(1.,1.,0.);
+const RGB RGB::Magenta(1.,0.,1.);
+const RGB RGB::Cyan(1.,0.,1.);
 
 //
-colRGB colRGB::operator+(const colRGB& c) const
+RGB RGB::operator+(const RGB& c) const
 {
-	colRGB cp;
+	RGB cp;
 	cp._red=_red+c._red;
 	cp._green=_green+c._green;
 	cp._blue+=_blue+c._blue;
@@ -24,9 +26,9 @@ colRGB colRGB::operator+(const colRGB& c) const
 }
 	
 //
-colRGB colRGB::operator-(const colRGB& c) const
+RGB RGB::operator-(const RGB& c) const
 {
-	colRGB cp;
+	RGB cp;
 	cp._red=_red-c._red;
 	cp._green=_green-c._green;
 	cp._blue=_blue-c._blue;
@@ -34,9 +36,9 @@ colRGB colRGB::operator-(const colRGB& c) const
 }
 	
 //
-colRGB operator*(const float x,const colRGB& c)
+RGB operator*(const float x,const RGB& c)
 {
-	colRGB cp;
+	RGB cp;
 	cp.red()=x*c.red();
 	cp.green()=x*c.green();
 	cp.blue()=x*c.blue();
@@ -44,37 +46,39 @@ colRGB operator*(const float x,const colRGB& c)
 }
 
 //
-colRGB colRGB::operator/(const float x) const
+RGB RGB::operator/(const float x) const
 {
 	return (1./x)*(*this);
 }
 
 //
-col col::operator+(const col& c) const
+RGBA RGBA::operator+(const RGBA& c) const
 {
-	colRGB cpRGB = *this;
+	RGB cpRGB = *this;
 	cpRGB = cpRGB + c;
-	return col(cpRGB, 0.5 * (_alpha+c._alpha));
+	return RGBA(cpRGB, 0.5 * (_alpha+c._alpha));
 }
 	
 //
-col col::operator-(const col& c) const
+RGBA RGBA::operator-(const RGBA& c) const
 {
-	colRGB cpRGB = *this;
+	RGB cpRGB = *this;
 	cpRGB = cpRGB - c;
-	return col(cpRGB, 0.5 * (_alpha+c._alpha));
+	return RGBA(cpRGB, 0.5 * (_alpha+c._alpha));
 }
 	
 //
-col col::operator/(const float x) const
+RGBA RGBA::operator/(const float x) const
 {
 	return (1./x)*(*this);
 }
 	
 //
-col operator*(float x,const col& c)
+RGBA operator*(float x,const RGBA& c)
 {
-	colRGB cpRGB = c;
+	RGB cpRGB = c;
 	cpRGB = x * cpRGB;
-	return col(cpRGB, c.alpha());
+	return RGBA(cpRGB, c.alpha());
+}
+
 }
