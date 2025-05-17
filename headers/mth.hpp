@@ -23,8 +23,20 @@ inline double dmod(double x,double y){return x-y*floor(x/y);}
 inline int mod(const int x,const int y){return (x>=0)?x%y:(y-(-x)%y)%y;}
 inline double rndom(){return 1./(RAND_MAX+1.)*rand();}
 
-double roundoff(const double x);
-double magsqr(double *x,const size_t N);
+inline double roundoff(const double x){
+	double xp=fabs(x);
+	double r=trunc(xp);
+	if(xp-r>0.5)r++;
+	if(x<0)r*=-1;
+	return r; 	
+}
+
+inline double magsqr(double *x,const size_t N){
+	double res=0.;
+	for(std::size_t i=0;i<N-1;++i)
+		res+=sqr(x[i]);
+	return res;
+}
 
 } // namespace mth
 

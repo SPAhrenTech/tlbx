@@ -47,7 +47,7 @@ private:
 public:
 	RGBA():RGB(),_alpha(1){}
 	RGBA(const float r,const float g,const float b,const float a=1.0):RGB(r,g,b),_alpha(a){}
-	RGBA(const RGB &crgb,const float a=1.0):RGB(crgb),_alpha(a){}
+	RGBA(const RGB &crgb,const float a=1.):RGB(crgb),_alpha(a){}
 	
 	RGBA operator+(const RGBA& c) const;
 	RGBA operator-(const RGBA& c) const;

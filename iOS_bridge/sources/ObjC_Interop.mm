@@ -15,7 +15,6 @@ std::string defaultFontName("Georgia");
 float defaultFontSize(14.0);
 
 @implementation ObjC_Interop
-//using namespace std;
 
 //
 -(void)drawString:(CFStringRef)s point:(CGPoint)P
@@ -33,7 +32,6 @@ float defaultFontSize(14.0);
 	NSString *nsFont=[[NSString alloc] initWithUTF8String:defaultFontName.c_str()];
 
 	[ns drawInRect:R withAttributes:@{NSFontAttributeName:[PlatformFont fontWithName:nsFont size:defaultFontSize]}];
-
 }
 
 @end
@@ -44,6 +42,7 @@ void drawString(CFStringRef s,CGPoint P)
 	ObjC_Interop *objC=[ObjC_Interop alloc];
 	[objC drawString:s point:P];
 }
+
 void drawString(CFStringRef s,CGRect R)
 {
 	ObjC_Interop *objC=[ObjC_Interop alloc];

@@ -16,7 +16,11 @@ inline double asincos(double s, double c){return atan2(s,c);}
 inline double acossin(double c, double s){return atan2(s,c);}
 
 //special function(s)
-double sinc(double x);
+inline double sinc(double x){
+	constexpr double tol = 1.e-18;
+	if (fabs(x)<tol) return 1.;
+	return sin(x)/x;
+}
 
 } // namespace trg
 

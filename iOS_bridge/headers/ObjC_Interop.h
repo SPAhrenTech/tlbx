@@ -6,8 +6,8 @@
 //  Copyright © 2022 Phil Ahrenkiel. All rights reserved.
 //
 
-//#ifndef _OBJC_INTEROP_
-//#define _OBJC_INTEROP_
+#ifndef _OBJC_INTEROP_
+#define _OBJC_INTEROP_
 
 //#import <CoreData/CoreData.h>
 #import "CoreGraphics/CoreGraphics.h"
@@ -44,4 +44,4 @@
 
 @end
 
-//#endif //_OBJC_INTEROP_
+#endif //_OBJC_INTEROP_
