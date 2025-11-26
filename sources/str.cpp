@@ -1,12 +1,22 @@
 //strings - P. Ahrenkiel
 
 #include <cstdlib>
+#include <CoreServices/CoreServices.h>
+#import "CoreGraphics/CoreGraphics.h"
+//#import <Foundation/Foundation.h>
+//#include <ApplicationServices/ApplicationServices.h>
+//#include <iostream>
 #include <string>
 #include <math.h>
 
 #include "mth.hpp"
 #include "str.hpp"
+//#include "ObjC_Interop.h"
+#if defined(TARGET_IOS)
+#include "cppBridge.h"
+#endif
 
+using namespace std;
 const str null_str;
 
 //
@@ -21,7 +31,7 @@ str::str(const char &c):std::string()
 //
 str::str(const double Num,const int nDig):std::string()
 {
-	(std::string)(*this)="";
+	(string)(*this)="";
 	if(Num<0)
 		*this=str("-");
 	
@@ -95,13 +105,13 @@ str::str(int Num,int nDig):std::string()
 {
 	(*this)=str(Num);
 	while(len()<nDig)
-		(std::string)(*this)="0"+(std::string)(*this);
+		(string)(*this)="0"+(string)(*this);
 }
 	
 //
 str str::operator+(const str &s)
 {
-	return (std::string)(*this)+(std::string)s;
+	return (string)(*this)+(string)s;
 }
 
 //
@@ -218,8 +228,8 @@ bool str::containsRight(const str s,short *pos)
 str str::allcaps()
 {
 	str scap=*this;
-	std::size_t L=size();
-	for(std::size_t i=0; i<L; i++)
+	size_t L=size();
+	for(short i=0;i<L;i++)
 	{
 		char c=(*this)[i+1];
 		if(('a'<=c)&&(c<='z'))
@@ -235,7 +245,7 @@ void str::find(str &s,const char delim,const short occurence)
 	size_t L=size();
 	
 	short jocc=0;
-	for(std::size_t i=0;i<L;++i)
+	for(short i=0;i<L;++i)
 	{
 		str sc=mid(i,1);
 		if(sc==str(delim))
@@ -280,16 +290,41 @@ float str::sfloat()
 }
 
 //
-std::istream& operator>>(std::istream &is,str &s)
+istream& operator>>(istream &is,str &s)
 {
-	is>>(std::string &)(s);
+	is>>(string &)(s);
 	return is;
 }
 
 //
-std::ostream& operator<<(std::ostream &os,const str &s)
+ostream& operator<<(ostream &os,const str &s)
 {
-	os<<static_cast<std::string>(s);
+	os<<(string)s;
 	return os;
 }
 
+#if defined(TARGET_IOS)
+CFStringRef str::cfStringRef(CFAllocatorRef allocator,CFStringEncoding encoding) const
+{
+	return CFStringCreateWithCString(allocator,c_str(),encoding);
+}
+
+//
+str::str(UniChar *s,const UInt16 slen):std::string()
+{
+	for(short i=0;i<slen;++i)
+		*this+=s[i];
+}
+
+//
+void str::draw(CGPoint P) const
+{
+	drawString(cfStringRef(),P);
+}
+
+//
+void str::draw(CGRect R) const
+{
+	drawString(cfStringRef(),R);
+}
+#endif

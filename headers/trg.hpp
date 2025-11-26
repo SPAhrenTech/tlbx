@@ -14,6 +14,8 @@ inline const double degtorad(180./Pi);
 //trg
 inline double asincos(double s, double c){return atan2(s,c);}
 inline double acossin(double c, double s){return atan2(s,c);}
+inline double asn(const double s){return (fabs(s)<1.)?asin(s):((s>0.)?Pi/2.:-Pi/2.);}
+inline double acs(const double c){return (fabs(c)<1.)?acos(c):((c>0.)?0.:Pi);}
 
 //special function(s)
 inline double sinc(double x){
