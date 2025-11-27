@@ -8,21 +8,17 @@
 
 namespace trg {
 
-inline const double Pi(4.*atan(1.));
-inline const double degtorad(180./Pi);
+extern const double Pi;
+extern const double degtorad;
 
 //trg
-inline double asincos(double s, double c){return atan2(s,c);}
-inline double acossin(double c, double s){return atan2(s,c);}
-inline double asn(const double s){return (fabs(s)<1.)?asin(s):((s>0.)?Pi/2.:-Pi/2.);}
-inline double acs(const double c){return (fabs(c)<1.)?acos(c):((c>0.)?0.:Pi);}
+double asincos(double s, double c);
+double acossin(double c, double s);
+double asn(const double s);
+double acs(const double c);
 
 //special function(s)
-inline double sinc(double x){
-	constexpr double tol = 1.e-18;
-	if (fabs(x)<tol) return 1.;
-	return sin(x)/x;
-}
+double sinc(double x);
 
 } // namespace trg
 
