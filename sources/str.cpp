@@ -134,7 +134,17 @@ bool str::operator==(const std::string& s) const
 
 bool str::operator==(const char *c) const
 {
-	return str::operator()()==str(c);
+	return str::operator()()==str(c)();
+}
+
+bool str::operator==(const str &s) const
+{
+	return _s==s();
+}
+
+bool str::operator!=(const std::string& s) const
+{
+	return _s!=s;
 }
 
 char *str::schar() const

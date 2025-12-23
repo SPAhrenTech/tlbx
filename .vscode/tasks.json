@@ -1,0 +1,76 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build tlbx(Debug)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "build/tlbx.xcodeproj",
+                "-scheme",
+                "tlbx",
+                "-configuration",
+                "Debug",
+                "-derivedDataPath",
+                "build",
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Build tlbx(Release)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "build/tlbx.xcodeproj",
+                "-scheme",
+                "tlbx",
+                "-configuration",
+                "Release",
+                "-derivedDataPath",
+                "build",
+                "build"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Clean invaders",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "build/tlbx.xcodeproj",
+                "-scheme",
+                "tlbx",
+                "clean",
+                "-derivedDataPath",
+                "build"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+
+    ]
+}

@@ -41,7 +41,9 @@ public:
 	void find(float &f,const char delim,const short occurence);
 	
 	bool operator==(const std::string& s) const;
+	bool operator==(const str &s) const;
 	bool operator==(const char *c) const;
+	bool operator!=(const std::string& s) const;
 	str operator+(const str &s) const;
 	str operator+=(const str &s);
 
