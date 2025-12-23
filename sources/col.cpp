@@ -1,4 +1,4 @@
-//RGBAors - P. Ahrenkiel
+//RGBA colors - P. Ahrenkiel
 
 #include <cstdlib>
 #include <math.h>

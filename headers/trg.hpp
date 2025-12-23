@@ -8,17 +8,17 @@
 
 namespace trg {
 
-extern const double Pi;
+extern const double pi;
 extern const double degtorad;
 
 //trg
-double asincos(double s, double c);
-double acossin(double c, double s);
 double asn(const double s);
 double acs(const double c);
+double asncs(double s, double c);
+double acssn(double c, double s);
 
 //special function(s)
-double sinc(double x);
+double snc(double x);
 
 } // namespace trg
 
