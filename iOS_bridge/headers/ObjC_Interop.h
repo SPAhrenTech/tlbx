@@ -9,18 +9,12 @@
 #ifndef _OBJC_INTEROP_
 #define _OBJC_INTEROP_
 
-//#import <CoreData/CoreData.h>
-#import "CoreGraphics/CoreGraphics.h"
-
-//#ifndef TARGET_IOS
-//#define TARGET_IOS
-//#endif
+#import <CoreGraphics/CoreGraphics.h>
 
 #if defined(TARGET_IOS) || defined(TARGET_TVOS)
 #import <UIKit/UIKit.h>
 #define PlatformFont UIFont
 #else
-//#import <AppKit/AppKit.h>
 #define PlatformFont NSFont
 #endif
 
@@ -32,15 +26,10 @@
 {
 @public
 
-	//long pointerToBridge;
-
 };
 
-//-(void)drawString:(CFStringRef)s;
 -(void)drawString:(CFStringRef)s point:(CGPoint)P;
 -(void)drawString:(CFStringRef)s rect:(CGRect)R;
-
-//-(void)storeBridgePointer:(long)ptr;
 
 @end
 

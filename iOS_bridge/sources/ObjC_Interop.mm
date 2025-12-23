@@ -16,7 +16,6 @@ float defaultFontSize(14.0);
 
 @implementation ObjC_Interop
 
-//
 -(void)drawString:(CFStringRef)s point:(CGPoint)P
 {
 	NSString *ns=(NSString *)CFBridgingRelease(s);
@@ -25,7 +24,6 @@ float defaultFontSize(14.0);
 	[ns drawAtPoint:P withAttributes:@{NSFontAttributeName:[PlatformFont fontWithName:nsFont size:defaultFontSize]}];
 }
 
-//
 -(void)drawString:(CFStringRef)s rect:(CGRect)R
 {
 	NSString *ns=(NSString *)CFBridgingRelease(s);

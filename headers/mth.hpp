@@ -21,7 +21,7 @@ double Kdelta(std::size_t i, std::size_t j);
 double dexp(const double x);
 double dmod(double x,double y);
 int mod(const int x,const int y);
-double rndom();
+double random();
 double roundoff(const double x);
 double magsqr(double *x,const size_t N);
 

@@ -6,27 +6,27 @@
 
 #include "mth.hpp"
 #include "str.hpp"
+#include <CoreServices/CoreServices.h>
+#include <CoreGraphics/CoreGraphics.h>
+
+#if defined(TARGET_IOS)
+#include "cppBridge.h"
+#endif
 
 const str null_str;
 
-//
-str::str(const char &c):std::string()
+str::str(const char &c)
 {
-	char cp[2];
-	cp[0]=c;
-	cp[1]='\0';
-	*this=str(cp);
+	_s=c;
 }
 
-//
-str::str(const double Num,const int nDig):std::string()
+str::str(const double Num,const int nDig)
 {
-	(std::string)(*this)="";
+	_s="";
 	if(Num<0)
-		*this=str("-");
+		_s="-";
 	
 	int nMag=0;
-
 	double  pDig=mth::pwr(10.,nDig);
 	double nRem=fabs(Num);
 	if(nRem>0.)nMag=(int)log10(nRem);
@@ -42,10 +42,10 @@ str::str(const double Num,const int nDig):std::string()
 
 		char c=(char)(nVal+(int)'0');/*ascii*/
 		if(((int)c>=(int)'0')&&((int)c<=(int)'9'))
-			(*this)+=c;
+			_s+=c;
 
 		if((i==0)&&(nDig>0))
-			(*this)+=".";/*decimal point*/
+			_s+=".";/*decimal point*/
 
 		double dVal=mth::roundoff(nRem*pDig);
 		double dpVal=mth::roundoff(nVal*p*pDig);
@@ -53,14 +53,11 @@ str::str(const double Num,const int nDig):std::string()
 		}
 	}
 	
-//
-str::str(const float Num,const int nDig):std::string()
+str::str(const float Num,const int nDig):str((double)Num,nDig)
 {
-	(*this)=str((double)Num,nDig);
 }
 	
-//
-str::str(const long Num):std::string()
+str::str(const long Num)
 {
 	int nVal;
 	if(Num<0)
@@ -79,43 +76,42 @@ str::str(const long Num):std::string()
 
 		char c=(char)(nVal+(int)'0');/*ascii*/
 		if((int(c)>=(int)'0')&&(int(c)<=(int)'9'))
-			(*this)+=str(c);
+			_s+=c;
 
 		}
 }
-str::str(const int Num):std::string()
+
+str::str(const int Num)
 {
 	(*this)=str((long)Num);
 }
 	
-str::str(int Num,int nDig):std::string()
+str::str(int Num,int nDig)
 {
 	(*this)=str(Num);
 	while(len()<nDig)
-		(std::string)(*this)="0"+(std::string)(*this);
+		_s="0"+_s;
 }
 	
-str str::operator+(const str &s)
+str str::operator+(const str &s) const
 {
-	return (std::string)(*this)+(std::string)s;
+	return _s+s();
 }
 
 str str::operator+=(const str &s)
 {
-	return *this=(*this)+s;
+	return *this=_s+s();
 }
 
-//
 short str::len() const
 {
-	return size();
+	return _s.size();
 }
 			
-//
 char *str::schar(size_t n,size_t pos) const
 {
 	//copy(c,Lp,pos1);
-	size_t L=size();
+	size_t L=_s.size();
 	size_t pos1=pos;
 	size_t pos2=pos+n;
 
@@ -126,14 +122,19 @@ char *str::schar(size_t n,size_t pos) const
 	
 	size_t Lp=pos2-pos1+1;
 	char *c=new char[Lp+1];
-	copy(c,Lp,pos1);
+	_s.copy(c,Lp,pos1);
 	c[Lp]='\0';
 	return c;
 }
 
-bool str::operator==(const char *c)
+bool str::operator==(const std::string& s) const
 {
-	return (*this)==str(c);
+	return _s==s;
+}
+
+bool str::operator==(const char *c) const
+{
+	return str::operator()()==str(c);
 }
 
 char *str::schar() const
@@ -149,7 +150,7 @@ str str::mid(const short pos,const short slen)
 	short i;
 	for(i=pos;(i<pos+slen)&&(i<l);++i)
 	{
-		char c=(*this)[i];
+		char c=_s[i];
 		res+=c;
 	}
 	return res;
@@ -167,7 +168,7 @@ str str::right(const short slen)
 }
 
 //
-bool str::contains(const str s,short *pos)
+bool str::contains(const str &s,short *pos)
 {
 	short l=s.len();
 	short l0=len();
@@ -175,7 +176,7 @@ bool str::contains(const str s,short *pos)
 	for(i=0;i<l0-l;++i)
 	{
 		str ssub=mid(i,l);
-		if(ssub==s)
+		if(ssub()==s())
 		{
 			*pos=i;
 			return true;
@@ -184,7 +185,7 @@ bool str::contains(const str s,short *pos)
 	return false;
 }
 
-bool str::containsRight(const str s,short *pos)
+bool str::containsRight(const str &s,short *pos)
 {
 	short l=s.len();
 	short l0=len();
@@ -193,7 +194,7 @@ bool str::containsRight(const str s,short *pos)
 	{
 		short j=(l0-l)-i-1;
 		str ssub=mid(j,l);
-		if(ssub==s)
+		if(ssub()==s())
 		{
 			*pos=j;
 			return true;
@@ -205,26 +206,26 @@ bool str::containsRight(const str s,short *pos)
 str str::allcaps()
 {
 	str scap=*this;
-	std::size_t L=size();
+	std::size_t L=_s.size();
 	for(std::size_t i=0; i<L; i++)
 	{
-		char c=(*this)[i+1];
+		char c=_s[i+1];
 		if(('a'<=c)&&(c<='z'))
 			c-=(short)'a'-(short)'A';
-		scap[i+1]=c;
+		scap._s[i+1]=c;
 	}
 	return scap;
 }
 
 void str::find(str &s,const char delim,const short occurence)
 {
-	size_t L=size();
+	size_t L=_s.size();
 	
 	short jocc=0;
 	for(std::size_t i=0;i<L;++i)
 	{
 		str sc=mid(i,1);
-		if(sc==str(delim))
+		if(sc()==str(delim)())
 		{
 			++jocc;
 			if(jocc==occurence)
@@ -237,7 +238,6 @@ void str::find(str &s,const char delim,const short occurence)
 	}
 }
 
-//
 void str::find(int &i,const char delim,const short occurence)
 {
 	str S;
@@ -254,12 +254,12 @@ void str::find(float &f,const char delim,const short occurence)
 
 int str::sint()
 {
-	return atoi(c_str());
+	return atoi(_s.c_str());
 }
 	
 float str::sfloat()
 {
-	return atof(c_str());
+	return atof(_s.c_str());
 }
 
 std::istream& operator>>(std::istream &is,str &s)
@@ -270,6 +270,29 @@ std::istream& operator>>(std::istream &is,str &s)
 
 std::ostream& operator<<(std::ostream &os,const str &s)
 {
-	os<<static_cast<std::string>(s);
+	os<<s();
 	return os;
 }
+
+#if defined(TARGET_IOS)
+CFStringRef str::cfStringRef(CFAllocatorRef allocator,CFStringEncoding encoding) const
+{
+	return CFStringCreateWithCString(allocator,_s.c_str(),encoding);
+}
+
+str::str(UniChar *s,const UInt16 slen):_s()
+{
+	for(short i=0;i<slen;++i)
+		_s+=s[i];
+}
+
+void str::draw(CGPoint P) const
+{
+	drawString(cfStringRef(),P);
+}
+
+void str::draw(CGRect R) const
+{
+	drawString(cfStringRef(),R);
+}
+#endif
