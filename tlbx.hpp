@@ -1,3 +1,5 @@
+// tlbx - A toolbox of useful stuff - P. Ahrenkiel (2026)
+
 #ifndef _TLBX
 #define _TLBX
 

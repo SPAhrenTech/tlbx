@@ -6,6 +6,11 @@ file(GLOB_RECURSE cpp_headers headers/*.hpp)
 file(GLOB_RECURSE cpp_sources sources/*.cpp)
 set(cpp_srcs ${PROJECT_NAME}.hpp ${cpp_headers} ${cpp_sources})
 
+# Organize files into groups for Xcode/Visual Studio
+source_group("headers" FILES ${cpp_headers})
+source_group("sources" FILES ${cpp_sources})
+source_group("" FILES ${PROJECT_NAME}.hpp)
+
 add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
 
 message(STATUS "project ${CMAKE_PROJECT_NAME}")

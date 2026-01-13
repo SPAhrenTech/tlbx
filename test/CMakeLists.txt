@@ -1,8 +1,17 @@
-set(files
+set(test_headers
         unit-test.hpp
+        )
+
+set(test_sources
         cpxTest.cpp
         unit-test-main.cpp
         )
+
+set(files ${test_headers} ${test_sources})
+
+# Organize files into groups for Xcode/Visual Studio
+source_group("headers" FILES ${test_headers})
+source_group("sources" FILES ${test_sources})
 
 add_executable(${PROJECT_NAME}_tests ${files})
 
