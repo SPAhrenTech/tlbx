@@ -1,0 +1,8 @@
+This project gives the following error when compiling: Command PhaseScriptExecution failed with a nonzero exit code
+Can you fix it?
+
+Can I tell CMake to change the names of file groups from "Source Files" and "Header Files" to "sources" and "headers"?
+
+Please do the same for tlbx_tests.
+
+Why is CMake adding CMakeLists.txt to the project?
