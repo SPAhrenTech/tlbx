@@ -16,6 +16,9 @@ TEST(cpxTest, general)
         cpx z(1., 2.);
         EXPECT_EQ(z.Re(), 1.);
         EXPECT_EQ(z.Im(), 2.);
+
+        auto theta = atan2(z.Im(), z.Re());
+        EXPECT_EQ(z.phase(), theta);
     }
 
   
