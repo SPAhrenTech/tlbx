@@ -36,3 +36,5 @@ builds/
 *.out
 *.app
 
+# Third-party dependencies
+/googletest/

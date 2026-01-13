@@ -19,3 +19,12 @@ set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 if(${PROJECT_NAME}_TARGET_IOS)
     add_subdirectory(iOS_bridge)
 endif()
+
+set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
+set(CMAKE_SUPPRESS_REGENERATION ON CACHE BOOL "" FORCE)
+add_subdirectory(googletest)
+
+if (${PROJECT_NAME}_BUILD_TESTING)
+    enable_testing()
+    add_subdirectory(test)
+endif()
