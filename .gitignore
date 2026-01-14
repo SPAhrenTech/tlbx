@@ -35,6 +35,3 @@ builds/
 *.exe
 *.out
 *.app
-
-# Third-party dependencies
-/googletest/
