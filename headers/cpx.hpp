@@ -8,7 +8,6 @@
 
 using cpxd=std::complex<double>;
 
-//class def(s)
 class cpx:public cpxd
 {
 	public:

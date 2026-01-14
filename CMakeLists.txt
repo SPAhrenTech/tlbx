@@ -25,11 +25,12 @@ if(${PROJECT_NAME}_TARGET_IOS)
     add_subdirectory(iOS_bridge)
 endif()
 
-set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
-set(CMAKE_SUPPRESS_REGENERATION ON CACHE BOOL "" FORCE)
-add_subdirectory(googletest)
 
 if (${PROJECT_NAME}_BUILD_TESTING)
     enable_testing()
+    set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
+    set(CMAKE_SUPPRESS_REGENERATION ON CACHE BOOL "" FORCE)
+    add_subdirectory(googletest)
+
     add_subdirectory(test)
 endif()
