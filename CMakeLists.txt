@@ -13,7 +13,6 @@ source_group("" FILES ${PROJECT_NAME}.hpp)
 
 add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
 
-message(STATUS "project ${CMAKE_PROJECT_NAME}")
 target_include_directories(${PROJECT_NAME} PUBLIC
     ${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/headers)
 
