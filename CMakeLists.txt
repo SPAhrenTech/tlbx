@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.10) # required
 
 project(tlbx)  # project name
 	
-file(GLOB_RECURSE cpp_headers headers/*.hpp)
-file(GLOB_RECURSE cpp_sources sources/*.cpp)
+file(GLOB_RECURSE cpp_headers CONFIGURE_DEPENDS headers/*.hpp)
+file(GLOB_RECURSE cpp_sources CONFIGURE_DEPENDS sources/*.cpp)
 set(cpp_srcs ${PROJECT_NAME}.hpp ${cpp_headers} ${cpp_sources})
 
 # Organize files into groups for Xcode/Visual Studio

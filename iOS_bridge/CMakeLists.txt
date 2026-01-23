@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10) # required
 
-file(GLOB_RECURSE objc_headers headers/*.h)
-file(GLOB_RECURSE objc_sources sources/*.mm)
+file(GLOB_RECURSE objc_headers CONFIGURE_DEPENDS headers/*.h)
+file(GLOB_RECURSE objc_sources CONFIGURE_DEPENDS sources/*.mm)
 set(objc_srcs ${objc_headers} ${objc_sources})
 
 add_library(${PROJECT_NAME}_iOS_bridge STATIC ${objc_srcs})
