@@ -6,12 +6,6 @@
 
 #include "mth.hpp"
 #include "str.hpp"
-#include <CoreServices/CoreServices.h>
-#include <CoreGraphics/CoreGraphics.h>
-
-#if defined(TARGET_IOS)
-#include "cppBridge.h"
-#endif
 
 const str null_str;
 
@@ -285,6 +279,10 @@ std::ostream& operator<<(std::ostream &os,const str &s)
 }
 
 #if defined(TARGET_IOS)
+#include <CoreServices/CoreServices.h>
+#include <CoreGraphics/CoreGraphics.h>
+#include "cppBridge.h"
+
 CFStringRef str::cfStringRef(CFAllocatorRef allocator,CFStringEncoding encoding) const
 {
 	return CFStringCreateWithCString(allocator,_s.c_str(),encoding);

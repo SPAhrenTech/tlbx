@@ -13,6 +13,8 @@ source_group("" FILES ${PROJECT_NAME}.hpp)
 
 add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
 
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
 target_include_directories(${PROJECT_NAME} PUBLIC
     ${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/headers)
 
