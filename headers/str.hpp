@@ -4,7 +4,6 @@
 #ifndef _STR_
 #define _STR_
 #include <iostream>
-#include <CoreGraphics/CoreGraphics.h>
  
 class str
 {
@@ -52,9 +51,9 @@ public:
 	
 	friend std::istream& operator >>(std::istream &is,str &s);
 	friend std::ostream& operator <<(std::ostream &os,const str &s);
-	
+
 #if defined(TARGET_IOS)
-//#include <CoreServices/CoreServices.h>
+#include <CoreGraphics/CoreGraphics.h>
 	str(UniChar *s,const UInt16 slen);
 	CFStringRef cfStringRef(CFAllocatorRef allocator=NULL,CFStringEncoding encoding=kCFStringEncodingUTF8) const;
 	void draw(CGPoint P) const;
