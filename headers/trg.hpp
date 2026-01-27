@@ -9,7 +9,7 @@
 namespace trg {
 
 extern const double pi;
-extern const double degtorad;
+extern const double deg_per_rad;
 
 //trg
 double asn(const double s);
